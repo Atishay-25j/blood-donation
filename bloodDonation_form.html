@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Blood Donation Form</title>
+	<link rel="stylesheet" type="text/css" href="style3.css">
+</head>
+<body>
+    <video autoplay loop muted play-inline class="backvid">
+        <source src="rcbmove2.mp4">
+    </video>
+    
+	<div class="container">
+		<h1>Blood Donation Form</h1>
+            <header>Enter Personal Details</header>
+            <form action="#">
+                <div class="details personal">
+                    <span class="title"> Donor's Detail </span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your name" title="Enter full name" pattern="^(\w\w+)\s(\w+)$" required>
+                        </div> 
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" placeholder="Enter DOB" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" placeholder="Enter Email" required>
+                        </div>
+    
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="tel" placeholder="Enter your mobile number" title="Enter 10 digit phone number" pattern="[0-9]{10}" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Address</label>
+                            <input type="text" placeholder="Enter your Address" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Occupation</label>
+                            <input type="text" placeholder="Enter your occupation" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Height(in cm)</label>
+                            <input type="text" placeholder="Enter your height" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Weight(in Kg)</label>
+                            <input type="text" placeholder="Enter your weight" required>
+                        </div>
+                        <div class="input-field">
+                        <label for="blood-group">Blood Group:</label>
+                        <select id="blood-group" name="blood-group" required>
+                            <option value="">Select Blood Group</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                        </select>
+                        </div>
+
+                        <div class="input-field">
+                        <label for="donation-date">Donation Date:</label>
+                        <input type="date" id="donation-date" name="setTodaysDate" required> 
+                        </div>
+
+                        <div class="input-field">
+                        <label for="id-proof">ID proof:</label>
+                        <input type="file" id="idproof" name="proof" title="Max size 0.8 MB" accept="application/pdf" required>
+                        </div>
+    
+
+                        <div class="input-field">
+                        <label for="location">Detect your location:</label>
+                        <input type="text" class="loc status" id="loct" value="Detect your location" readonly></button>
+                        </div>
+                    <!-- <div class="input-field"> -->
+                    <!-- <label for="last-donation-date">Last Donation Date:</label>
+                        <input type="date" id="last-donation-date" name="last-donation-date" required>
+                        </div> -->
+	                </div>
+                    <br>
+
+                    <h4>🩸 Have you donated blood in last 3 months ?</h4>
+                    <br>
+                    <div class="check-label">
+                        <label><input type = "radio" name="previously" required>Yes</label>   
+                        <label><input type = "radio" name="previously">No</label>
+                    </div>   
+                    <br>
+                    <br>
+
+                    <h4>🩸 Have You any reason to believe that you may be infected by either Hepatitis, Malaria, HIV/AIDS, and/or Venereal Disease ? </h4>
+                    <br>
+                    <div class="check-label">
+                    <label><input type = "radio" name="infected" required>Yes</label> 
+                    <label><input type = "radio" name="infected">No</label>
+                    </div>
+                    <br>
+                    <br>
+
+                    <h4>🩸 In the last 6 Months have you had any history of the following: </h4>
+                    <div class="check-label">
+                    <br>
+                    <label ><input type = "checkbox" >Unexplained Weight Loss</label>
+                    <br>
+                    <label><input type = "checkbox" >Repeared Diarrhoea</label> 
+                    <br>
+                    <label><input type = "checkbox" >Swollen Glands</label>
+                    <br>
+                    <label><input type = "checkbox" >Continuous Low-Grade Fever</label>
+                    </div>
+                    <br>
+
+
+
+                    <h4>🩸 In the last 6 Months have you had any :-</h4>
+                    <div class="check-label">
+                    <br>
+                    <label><input type = "checkbox" > Tattooing</label>
+                    <br>
+                    <label><input type = "checkbox" > Ear Piercing </label> 
+                    <br>
+                    <label><input type = "checkbox" > Dental Extraction</label>
+                    <br>
+                    </div>
+
+                    <h4> 🩸 Do you suffer from or have suffered from any of the following Diseases?:- </h4>
+                    <div class="check-label">
+                        <br>
+                        <div class="checkAlign">
+                        
+                        <label><input type = "checkbox" >Heart Diseas</label>
+                        
+                        <label><input type = "checkbox">  Lung Disease </label> 
+                        
+                        <label><input type = "checkbox" > Kidney Disease</label>
+                        
+                        <label><input type = "checkbox" > Cancer/ Malignant Disease </label>
+                        
+                        <label><input type = "checkbox" > Epilepsy</label>
+                        
+                        <label><input type = "checkbox" > Diabetes</label>
+                        
+                        <label><input type = "checkbox" > Tuberculosis</label>
+                        
+                        <label><input type = "checkbox" > Abnormal bleeding tendency</label>
+                        
+                        <label><input type = "checkbox" > Hepatitis B/C</label>
+                        
+                        <label><input type = "checkbox" >  Allergic Disease</label>
+                        
+                        <label><input type = "checkbox" > Jaundice</label>
+                        
+                        <label><input type = "checkbox" > Saxually Trans. Disease </label>
+                        
+                        <label><input type = "checkbox" > Malaria</label>
+                        
+                        <label><input type = "checkbox" > Typhoid (Last 1 yr.) </label>
+                        
+                        <label><input type = "checkbox" > Fainting Spells</label>
+                        
+                        </div>
+                    </div>
+
+                    <br>
+
+
+                    <h4>🩸 Is There any history of surgery or Blood Transfusion in the past 6 Months? :- </h4>
+                    <div class="check-label">
+                    <br>
+                    <label><input type = "checkbox" > Major Surgery</label>
+                    <br>
+                    <label><input type = "checkbox" >Blood Transfusion </label> 
+                    <br>
+                    <label><input type = "checkbox" > Minor Surgery</label>
+                    <br>
+                    </div>
+                    <div class="btn">
+                        <input type="submit" value="Ready to donate">
+                    </div>
+                </div>
+            </form>
+    </div>
+	<script src="script.js"></script>
+</body>
+</html>
